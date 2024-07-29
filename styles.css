@@ -1,0 +1,40 @@
+.menubtn {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  section {
+    flex-direction: column-reverse;
+  }
+
+  .content,
+  .ing {
+    width: 100%;
+    margin-inline: 3rem;
+  }
+
+  .menubtn {
+    display: block;
+  }
+  .nav-item,
+  .sign-up {
+    display: none;
+  }
+
+  nav {
+    color: white;
+    background-color: #13313c;
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+
+.log {
+  cursor: pointer;
+}
+
+.log:hover {
+  animation-name: move-it;
+  transform: scale(1.1) translateX(-20px);
+  animation-duration: 2s;
+}
